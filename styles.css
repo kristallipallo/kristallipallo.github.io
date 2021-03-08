@@ -9,9 +9,11 @@ body{
 }
 button{
     text-decoration: none;
+    text-align: center;
     display: inline;
     margin: 80px;
     margin-top: 30px;
+    margin-bottom: 2%;
     padding: 10px;
     border-radius: 12px;
     background-color: #23123F;
@@ -22,10 +24,16 @@ button{
 #menutop{
     display:flex;
     justify-content: flex-start;
+    border-bottom: goldenrod 2px solid;
+
 }
 #searchBar{
     background-color: blanchedalmond;
     border: 2px solid white;
     height:17px;
-    
+    margin-top: 30px;
+}
+#goldLine{
+    width: 100%;
+    height:3px;
 }
