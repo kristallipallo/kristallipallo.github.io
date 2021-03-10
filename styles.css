@@ -1,5 +1,23 @@
 body{
     background-color: black;
+    color:antiquewhite;
+    width: 100%;
+}
+
+@font-face {
+    font-family: headingFont;
+    src: url(media/Merriweather/Merriweather-BlackItalic.ttf);
+
+}
+
+@font-face {
+    font-family: titleFont;
+    src: url(media/Merriweather/Merriweather-Bold.ttf);
+}
+
+@font-face {
+    font-family: contentFont;
+    src: url(media/Josefin_Sans/JosefinSans-VariableFont_wght.ttf)
 }
 
 #logo{
@@ -16,48 +34,98 @@ li{
     text-decoration: none;
     text-align: center;
     display: inline;
-    margin: 80px;
-    margin-top: 60px;
-    margin-bottom: 2%;
-    padding: 15px;
-    border-radius: 12px;
-    background-color: #23123F;
+    margin: 4rem;
+    margin-top: 3.75rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 0.8rem;
     color:antiquewhite;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
+    font-size: 1rem;
+    background: linear-gradient(0deg, rgb(17, 9, 31) 0%, rgba(35, 18, 63,1) 37%, rgb(121, 64, 214) 100%);
  
 }
 
 li:hover {
-    background-color: #422472;
-    transition-duration: 0.2s;
+    background: linear-gradient(180deg, rgb(17, 9, 31) 0%, rgba(35, 18, 63,1) 37%, rgb(121, 64, 214) 100%);
+    transition-duration: 0.3s;
 }
 
 li a {
     text-decoration: none;
+    color:antiquewhite;
 }
 
 li a:visited {
     color:antiquewhite;
 }
 
-li a:hover {
-   
-}
-
 #menutop{
     display:flex;
     justify-content: flex-start;
     border-bottom: goldenrod 2px solid;
-
+    background-color: black;
+    overflow: hidden;
+    position:fixed;
+    width:100%;
+    top:0;
 }
 #searchBar{
-    background-color: blanchedalmond;
-    border: 2px solid white;
-    height:17px;
-    margin-top: 30px;
+    border-radius: 50%;
+    margin-top:2rem;
+    margin-left: 3rem;
 }
+
+#kirjaudu {
+    color:antiquewhite;
+    margin-left: 5rem;
+    margin-right: -5.5rem;
+    
+
+}
+
 #goldLine{
     width: 100%;
     height:3px;
+}
+
+#content {
+    margin-top: 10rem;
+}
+
+h1 {
+    text-align: center;
+    font-family: headingFont;
+}
+
+p {
+    text-align:center;
+    max-width: 50rem;
+    font-family: contentFont;
+
+}
+
+h2 {
+    margin: 2rem;
+    text-align: center;
+    font-family: titleFont;
+}
+
+#kuva1 {
+    height: 40%;
+    width: 40%;
+    float: left;
+}
+
+.aihe {
+   
+margin: 25%;
+margin-top:0;
+margin-bottom: 5rem;
+}
+
+#kuva2 {
+    height: 40%;
+    width: 40%;
+    float: right;
 }
