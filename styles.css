@@ -80,8 +80,6 @@ li a:visited {
     color:antiquewhite;
     margin-left: 5rem;
     margin-right: -5.5rem;
-    
-
 }
 
 #goldLine{
@@ -102,7 +100,6 @@ p {
     text-align:center;
     max-width: 50rem;
     font-family: contentFont;
-
 }
 
 h2 {
@@ -118,7 +115,6 @@ h2 {
 }
 
 .aihe {
-   
 margin: 25%;
 margin-top:0;
 margin-bottom: 5rem;
@@ -129,3 +125,39 @@ margin-bottom: 5rem;
     width: 40%;
     float: right;
 }
+
+@media only screen and (max-width: 1360px){
+    li{
+        text-decoration: none;
+        text-align: center;
+        display: inline;
+        margin: 1rem;
+        margin-top: 3.75rem;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        border-radius: 0.8rem;
+        color:antiquewhite;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        background: linear-gradient(0deg, rgb(17, 9, 31) 0%, rgba(35, 18, 63,1) 37%, rgb(121, 64, 214) 100%);
+    
+}
+    }
+    @media only screen and (max-width: 990px){
+        li{
+            text-decoration: none;
+            text-align: center;
+            display: inline;
+            margin: 1rem;
+            margin-top: 3.75rem;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            border-radius: 0.8rem;
+            color:antiquewhite;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1rem;
+            background: linear-gradient(0deg, rgb(17, 9, 31) 0%, rgba(35, 18, 63,1) 37%, rgb(121, 64, 214) 100%);
+        
+    }
+        }
+    
