@@ -20,7 +20,7 @@ body{
     src: url(media/Josefin_Sans/JosefinSans-VariableFont_wght.ttf)
 }
 
-#logo{
+.logo{
     height:80px;
     width: 80px;
     border-radius: 50%;
@@ -143,7 +143,7 @@ margin-bottom: 5rem;
     
 }
     }
-    @media only screen and (max-width: 990px){
+    @media only screen and (max-width: 1000px){
         li{
             text-decoration: none;
             text-align: center;
@@ -159,5 +159,61 @@ margin-bottom: 5rem;
             background: linear-gradient(0deg, rgb(17, 9, 31) 0%, rgba(35, 18, 63,1) 37%, rgb(121, 64, 214) 100%);
         
     }
-        }
+        
+    .container {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
     
+    .container .logo {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+    }
+    
+    .container .navbar {
+        -webkit-box-flex: 0;
+        -ms-flex: 0;
+        flex: 0;
+    }
+    
+    .container .navbar ul {
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        position: fixed;
+        left: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        background: #000000;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        -webkit-transition: left .3s;
+        -o-transition: left .3s;
+        transition: left .3s;
+    }
+    
+    .container .navbar ul li a {
+        padding: 10px;
+        font-size: 16px;
+        height: auto;
+       
+    }
+    
+    .container .navbar ul .close {
+        display: block;
+    }
+    
+    .container .navbar .icon-bar {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    
+    .container .navbar ._Menus-show {
+        left: 0;
+    }
+    }
