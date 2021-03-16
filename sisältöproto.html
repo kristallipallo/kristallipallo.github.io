@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style/styles_sis.css">
     <!-- icon library for hamburger -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script rel="script" src="scripts/script_sis.js"></script>
 </head>
 
 <body>
@@ -26,10 +27,10 @@
         <div id="kirjaudu">Kirjaudu sisään</div>
         <div><img id="searchBar" src="media/search1.png" alt="search"></div>
     </div>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
+    <!--"Hamburger menu" / "Bar icon" to toggle the navigation links */-->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
     </header>
     <div id="content">
         <div>
@@ -126,16 +127,8 @@
     <footer>
         <p>Copyright &copy; New Moon Group 2021</p>
     </footer>
-    <script>
-        function myFunction() {
-          var x = document.getElementById("myLinks");
-          if (x.style.display === "block") {
-            x.style.display = "none";
-          } else {
-            x.style.display = "block";
-          }
-        }
-        </script>
+    <!--Changes the display of the menu-->
+    
 </body>
 
 </html>
