@@ -204,4 +204,12 @@ margin-bottom: 5rem;
   .icon {
       display: initial;
   }
+
+  .mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: black;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
     }
