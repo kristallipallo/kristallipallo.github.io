@@ -3,43 +3,22 @@ body{
     color:antiquewhite;
     width: 100%;
 }
-#myLinks{
-    display: flex;
-}
-@font-face {
+h1 {
+    text-align: center;
     font-family: headingFont;
-    src: url(media/Merriweather/Merriweather-BlackItalic.ttf);
 }
 
-@font-face {
+h2 {
+    margin: 2rem;
+    text-align: center;
     font-family: titleFont;
-    src: url(media/Merriweather/Merriweather-Bold.ttf);
 }
 
-@font-face {
+p {
+    text-align:center;
+    max-width: 50rem;
     font-family: contentFont;
-    src: url(media/Josefin_Sans/JosefinSans-VariableFont_wght.ttf)
 }
-
-.topnav .icon {
-    display: none;
-}
-
-#logo{
-    height:80px;
-    width: 80px;
-    border-radius: 50%;
-}
-
-#otsikko {
-    color:antiquewhite;
-    align-self: flex-start;
-}
-
-#myLinks {
-    align-self:flex-end;
-}
-
 ul {
     margin-top: 35px;
     margin-bottom: 50px;
@@ -48,7 +27,7 @@ li{
     text-decoration: none;
     text-align: center;
     display: inline;
-    margin: 3rem;
+    margin: 1rem;
     margin-top: 3.75rem;
     margin-bottom: 1rem;
     padding: 1rem;
@@ -74,10 +53,50 @@ li a:visited {
     color:antiquewhite;
 }
 
+@font-face {
+    font-family: headingFont;
+    src: url(media/Merriweather/Merriweather-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family: titleFont;
+    src: url(media/Merriweather/Merriweather-Bold.ttf);
+}
+
+@font-face {
+    font-family: contentFont;
+    src: url(media/Josefin_Sans/JosefinSans-VariableFont_wght.ttf)
+}
+
+.topnav .icon {
+    display: none;
+}
+.aihe { 
+    margin: 25%;
+    margin-top:0;
+    margin-bottom: 5rem;
+    }
+
+
+#logo{
+    height:80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+/*#otsikko {
+    color:antiquewhite;
+    align-self: center;
+}*/
+#myLinks{
+    display: flex;
+    align-self:flex-end;
+}
+
 #myTopnav{
     display:flex;
     justify-content: center;
-    align-items: flex-end;
+    /*align-items: flex-end;*/
     border-bottom: goldenrod 2px solid;
     background-color: black;
     overflow: hidden;
@@ -85,16 +104,22 @@ li a:visited {
     width:100%;
     top:0;
 }
+
+#höskät{
+    justify-content: left;
+}
 #searchBar{
     border-radius: 50%;
     margin-top:2rem;
-    margin-left: 3rem;
+    margin-left: 2rem;
+    display: fixed;
 }
 
 #kirjaudu {
     color:antiquewhite;
-    margin-left: 5rem;
-    margin-right: -5.5rem;
+    margin-left: 2rem;
+    display: flex;
+    position: relative;
 }
 
 #goldLine{
@@ -106,22 +131,6 @@ li a:visited {
     margin-top: 10rem;
 }
 
-h1 {
-    text-align: center;
-    font-family: headingFont;
-}
-
-h2 {
-    margin: 2rem;
-    text-align: center;
-    font-family: titleFont;
-}
-
-p {
-    text-align:center;
-    max-width: 50rem;
-    font-family: contentFont;
-}
 
 #kuva1 {
     height: 40%;
@@ -129,11 +138,7 @@ p {
     float: left;
 }
 
-.aihe { 
-margin: 25%;
-margin-top:0;
-margin-bottom: 5rem;
-}
+
 
 #kuva2 {
     height: 40%;
@@ -141,98 +146,99 @@ margin-bottom: 5rem;
     float: right;
 }
 /* Pienet versiot menusta */
-@media only screen and (max-width: 1200px){
+
     
-  /*säätää menun asetukset kun näyttö max 1000px*/
-  @media only screen and (max-width: 1025px){
-      
+/*säätää menun asetukset kun näyttö max 1000px*/
+@media only screen and (max-width: 1200px){
+     
+   /*kommentoin tän pois koska rikkoo koodia atm testatessa 
+    ul {
+        display: flex;
+        justify-content: flex-start;   
+    }*/
+    
     li{
         text-decoration: none;
         text-align: center;
         display: inline;
-        margin: 1rem;
+        margin: .5rem;
         margin-top: 3.75rem;
         margin-bottom: 1rem;
-        padding: 1rem;
+        padding: .5rem;
         border-radius: 0.8rem;
         color:antiquewhite;
         font-family: contentFont;
         font-size: 1rem;
         background: linear-gradient(0deg, rgb(17, 9, 31) 0%, rgba(35, 18, 63,1) 37%, rgb(121, 64, 214) 100%);
-}
-    
-    
-    
-
-        ul {
-            display: flex;
-            flex-direction: column;
-        }
+    }
         
-        li{
-            text-decoration: none;
-            display: initial;
-            text-align: center;
-            color:antiquewhite;
-            font-family: contentFont;
-            font-size: 1.5rem;
-            background-color: none;
-            padding: 0;
-            background: black;
-            margin-top:2rem;
-        }
+    }
+@media only screen and (max-width: 1000px){   
+    li{
+        text-decoration: none;
+        display: flex;
+        text-align: center;
+        color:antiquewhite;
+        font-family: contentFont;
+        font-size: 1.5rem;
+        background-color: none;
+        padding: 0;
+        background: black;
+        margin-top:2rem;
+    }
 
-        li:hover {
-            background: none;
-        }
+    li:hover {
+        background: none;
+    }
+/* Style the hamburger menu */
+    .topnav a.icon {
+        background: black;
+        color:ivory;
+        display: block;
+        position: absolute;
+        right: 2rem;
+        top: 2rem;
+        height: 4rem;
+    }
 
-        #myTopnav{
-            display:flex;
-            justify-content: center;
-            border-bottom: goldenrod 2px solid;
-            background-color: black;
-            overflow: hidden;
-            position:fixed;
-            width:100%;
-            top:0;
-        }
-  
+    .icon {
+        display: initial;
+    }
+
+    .mobile-container {
+        max-width: 480px;
+        margin: auto;
+        background-color: black;
+        /*height: 500px;*/
+        color: white;
+        border-radius: 10px;
+    }
+    #myTopnav{
+        display:flex;
+        justify-content: center;
+        border-bottom: goldenrod 2px solid;
+        background-color: black;
+        overflow: hidden;
+        position:fixed;
+        width:100%;
+        top:0;
+    }
+}
   /* Hide the links inside the navigation menu (except for logo/home)
   .topnav #myLinks {
     display: none;
   }
   
-  /* Style the hamburger menu */
-  .topnav a.icon {
-    background: black;
-    color:ivory;
-    display: block;
-    position: absolute;
-    right: 2rem;
-    top: 2rem;
-    height: 4rem;
-  }
-
- .icon {
-      display: initial;
-  }
-
-  .mobile-container {
-    max-width: 480px;
-    margin: auto;
-    background-color: black;
-    height: 500px;
-    color: white;
-    border-radius: 10px;
-    }
+  
+    
     #searchBar{
-       margin-left: 10rem;
+        margin-left: 10rem;
     }
     #kirjaudu{
         font-size: 1.25rem;
         margin-left: 6.5rem;
     }
-    
+
     }
 
     /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon)
