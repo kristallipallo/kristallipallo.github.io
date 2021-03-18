@@ -16,8 +16,8 @@ Tän menun saisi tehtyä myös laittamalla eventlistenerin tai lisäämällä ht
 Testaan sitä lisää torstaina 18.3.*/
 
 function myFunction() {
-    var x = document.getElementById("myLinks");
-    /*var y= document.getElementById("body");*/
+   var x = document.getElementById("myLinks");
+    //var y= document.getElementById("body");
     if (x.style.display="block" && screen.width<1000) {
       x.style.display = "none";
       console.log("Feck");
@@ -31,3 +31,16 @@ function myFunction() {
      console.log("hell");
    }
 }
+/*
+
+//Menu button click handler
+x.onclick= function (){
+  if ($(x).hasClass( "open")==="false"){
+    x.classList.add("open");
+} 
+  else if ($(x).hasClass("open")==="true"){
+    x.classList.remove("open")
+  }}
+/*closeMenuBtn.onclick= function(){
+  menu.classList.remove("open");
+}*/
