@@ -4,6 +4,7 @@ body{
     width: 100%;
     box-sizing: border-box;
 }
+
 h1 {
     text-align: center;
     font-family: headingFont;
@@ -20,10 +21,12 @@ p {
     max-width: 50rem;
     font-family: contentFont;
 }
+
 ul {
     margin-top: 35px;
     margin-bottom: 50px;
 }
+
 li{
     text-decoration: none;
     text-align: center;
@@ -72,12 +75,12 @@ li a:visited {
 .topnav .icon {
     display: none;
 }
+
 .aihe { 
     margin: 25%;
     margin-top:0;
     margin-bottom: 5rem;
     }
-
 
 #logo{
     height:80px;
