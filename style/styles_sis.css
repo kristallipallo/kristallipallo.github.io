@@ -2,6 +2,7 @@ body{
     background-color: black;
     color:antiquewhite;
     width: 100%;
+    box-sizing: border-box;
 }
 h1 {
     text-align: center;
@@ -82,12 +83,17 @@ li a:visited {
     height:80px;
     width: 80px;
     border-radius: 50%;
+    align-self:center;
+    
 }
 
-/*#otsikko {
+#otsikko {
     color:antiquewhite;
-    align-self: center;
-}*/
+    align-self: flex-start;
+    position: relative;
+    text-align:center;
+    width:100%;
+}
 #myLinks{
     display: flex;
     align-self:flex-end;
@@ -96,13 +102,15 @@ li a:visited {
 #myTopnav{
     display:flex;
     justify-content: center;
-    /*align-items: flex-end;*/
     border-bottom: goldenrod 2px solid;
     background-color: black;
     overflow: hidden;
     position:fixed;
     width:100%;
     top:0;
+    height: 12rem;
+    flex-wrap: wrap;
+    align-items: flex-end;
 }
 
 #höskät{
