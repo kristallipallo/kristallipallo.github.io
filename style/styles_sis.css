@@ -22,6 +22,11 @@ p {
     font-family: contentFont;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 ul {
     margin-top: 35px;
     margin-bottom: 50px;
@@ -59,21 +64,17 @@ li a:visited {
 
 @font-face {
     font-family: headingFont;
-    src: url(media/Merriweather/Merriweather-BlackItalic.ttf);
+    src: url(/media/Merriweather/Merriweather-BlackItalic.ttf);
 }
 
 @font-face {
     font-family: titleFont;
-    src: url(media/Merriweather/Merriweather-Bold.ttf);
+    src: url(/media/Merriweather/Merriweather-Bold.ttf);
 }
 
 @font-face {
     font-family: contentFont;
-    src: url(media/Josefin_Sans/JosefinSans-VariableFont_wght.ttf)
-}
-
-.topnav .icon {
-    display: none;
+    src: url(/media/Josefin_Sans/JosefinSans-VariableFont_wght.ttf)
 }
 
 .aihe { 
@@ -86,7 +87,8 @@ li a:visited {
     height:80px;
     width: 80px;
     border-radius: 50%;
-    align-self:center;
+    position:relative;
+    padding:1rem;
     
 }
 
@@ -116,21 +118,20 @@ li a:visited {
     align-items: flex-end;
 }
 
-#höskät{
-    justify-content: right;
-}
 #searchBar{
     border-radius: 50%;
     margin-top:2rem;
     margin-left: 2rem;
-    display: fixed;
+    width:2rem;
+    height:2rem;
 }
 
 #kirjaudu {
     color:antiquewhite;
-    margin-left: 2rem;
-    display: flex;
+    border:2px solid white;
     position: relative;
+    margin:0;
+    padding: 0;
 }
 
 #goldLine{
@@ -159,14 +160,8 @@ li a:visited {
 /* Pienet versiot menusta */
 
     
-/*säätää menun asetukset kun näyttö max 1000px*/
-@media only screen and (max-width: 1200px){
-     
-   /*kommentoin tän pois koska rikkoo koodia atm testatessa 
-    ul {
-        display: flex;
-        justify-content: flex-start;   
-    }*/
+/*säätää menun asetukset kun näyttö max 950px*/
+@media (max-width: 950px){
     
     li{
         text-decoration: none;
@@ -175,7 +170,7 @@ li a:visited {
         margin: .5rem;
         margin-top: 3.75rem;
         margin-bottom: 1rem;
-        padding: .5rem;
+        padding: 1rem;
         border-radius: 0.8rem;
         color:antiquewhite;
         font-family: contentFont;
@@ -184,10 +179,15 @@ li a:visited {
     }
         
     }
-@media only screen and (max-width: 1000px){   
+@media (max-width: 949px){   
+    
+    h1 {
+        text-align:center;
+    }
     li{
         text-decoration: none;
         display: flex;
+        justify-content: center;
         text-align: center;
         color:antiquewhite;
         font-family: contentFont;
@@ -201,77 +201,30 @@ li a:visited {
     li:hover {
         background: none;
     }
-/* Style the hamburger menu */
-    .topnav a.icon {
-        background: black;
-        color:ivory;
-        display: block;
-        position: absolute;
-        right: 2rem;
-        top: 2rem;
-        height: 4rem;
-    }
 
-    .icon {
-        display: initial;
-    }
 
     .mobile-container {
-        max-width: 480px;
+        position:fixed;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        bottom:0;
         margin: auto;
         background-color: black;
-        /*height: 500px;*/
         color: white;
         border-radius: 10px;
     }
     #myTopnav{
         display:flex;
         justify-content: center;
+        text-align: center;
         border-bottom: goldenrod 2px solid;
         background-color: black;
         overflow: hidden;
-        position:fixed;
         width:100%;
         top:0;
     }
+
 }
-  /* Hide the links inside the navigation menu (except for logo/home)
-  .topnav #myLinks {
-    display: none;
-  }
-  
-  
-    
-    #searchBar{
-        margin-left: 10rem;
-    }
-    #kirjaudu{
-        font-size: 1.25rem;
-        margin-left: 6.5rem;
-    }
-
-    }
-
-    /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon)
-@media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-  }
-  
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally).
-  @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-  }*/
