@@ -1,24 +1,85 @@
 <!DOCTYPE html>
-<html lang="fi">
+<html lang="zxx">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kristallipallo</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style/styles_sis.css">
+    <!-- icon library for hamburger -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/tarot_css.css">
 </head>
+
 <body>
-    <div id="menutop">
-    <header>
-        <img src="media/nmg1.jpg" id="logo">
+    <header class="topnav" id="myTopnav">
+         <!--Otsikko lisätty-->  
+        <h1 id="otsikko">Kristallipallo</h1>
+        <div class="hedari">
+        <a href="index.html"><img class="active" src="media/nmg1.jpg" id="logo" alt="New Moon Logo"></a>
+        <button id="menuBtn" class="hidden-desk"></button>
+    
+        
+        <nav id="menu">    
+            <button id="closeMenuBtn" class="hidden-desk"></button>
+            <ul>
+                <li><a href="horoskooppi.html">Horoskooppi</a></li>
+                <li><a href="tarot.html">Tarot-kortit</a></li>
+                <li><a href="kadestaennustaminen.html">Kädestä ennustaminen</a></li>
+                <li><a href="ennustuksesi.html">Ennustuksesi</a></li>
+            </ul>
+        </nav>
+        
+        <!--Kirjautuminen ja search-->
+        <div id="höskät">
+            <div id="kirjaudu">Kirjaudu sisään</div>
+            <img id="searchBar" src="media/search1.png" alt="search"></div>
+        </div>
+        
+        
+    <!--"Hamburger menu" / "Bar icon" to toggle the navigation links */-->
+    <!--<a href="javascript:void(0);" class="icon" onclick="myFunction()" id="menuBtn">
+        <i class="fa fa-bars"></i>
+    </a>-->
     </header>
-    <nav>
-        <button>Horoskooppi</button>
-        <button>Tarot-kortit</button>
-        <button>Kädestä ennustaminen</button>
-        <button>Ennustuksesi</button>
-    </nav>
-    <div id="searchBar">search</div>
-</div>
+    
+    <div id="content">
+        
+        <h1>Page Title</h1>
+       
+        <div class="aihe">
+            <h2>Tarot-kortit</h2>
+            <div id="kortit">
+            <img class="tarot_pic" id="tarot1" src="media/tarot/tarot1.jpg" alt="testikuva1">
+            <img class="tarot_pic" id="tarot2" src="media/tarot/tarot2.jpg" alt="testikuva 2">
+            <img class="tarot_pic" id="tarot2" src="media/tarot/tarot3.jpg" alt="testikuva 2">
+            <img class="tarot_pic" id="tarot2" src="media/tarot/tarot4.jpg" alt="testikuva 2">
+            <img class="tarot_pic" id="tarot2" src="media/tarot/tarot5.jpg" alt="testikuva 2">
+            <img class="tarot_pic" id="tarot2" src="media/tarot/tarot6.jpg" alt="testikuva 2">
+            <img class="tarot_pic" id="tarot2" src="media/tarot/tarot7.jpg" alt="testikuva 2">
+            <img class="tarot_pic" id="tarot1" src="media/tarot/tarot8.jpg" alt="testikuva1">
+            <img class="tarot_pic" id="tarot2" src="media/tarot/tarot9.jpg" alt="testikuva 2">
+            <img class="tarot_pic" id="tarot2" src="media/tarot/tarot2.jpg" alt="testikuva 2">
+            <img class="tarot_pic" id="tarot2" src="media/tarot/tarot2.jpg" alt="testikuva 2">
+            <img class="tarot_pic" id="tarot2" src="media/tarot/tarot2.jpg" alt="testikuva 2">
+            <img class="tarot_pic" id="tarot2" src="media/tarot/tarot2.jpg" alt="testikuva 2">
+            <img class="tarot_pic" id="tarot2" src="media/tarot/tarot2.jpg" alt="testikuva 2">
+            <img class="tarot_pic" id="tarot1" src="media/tarot/tarot1.jpg" alt="testikuva1">
+            <img class="tarot_pic" id="tarot2" src="media/tarot/tarot2.jpg" alt="testikuva 2">
+            <img class="tarot_pic" id="tarot2" src="media/tarot/tarot2.jpg" alt="testikuva 2">
+            <img class="tarot_pic" id="tarot2" src="media/tarot/tarot2.jpg" alt="testikuva 2">
+            <img class="tarot_pic" id="tarot2" src="media/tarot/tarot2.jpg" alt="testikuva 2">
+            <img class="tarot_pic" id="tarot2" src="media/tarot/tarot2.jpg" alt="testikuva 2">
+            <img class="tarot_pic" id="tarot2" src="media/tarot/tarot2.jpg" alt="testikuva 2">
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        <p>Copyright &copy; New Moon Group 2021</p>
+    </footer>
+    <script rel="script" src="scripts/script_sis.js"></script> 
 </body>
+
 </html>
