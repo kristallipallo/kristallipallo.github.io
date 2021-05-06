@@ -71,6 +71,11 @@ form:hover .fa{
     background: #07051a;
     color: white;
 }
+
+.search{
+    position: fixed;
+    right: 10%;
+}
 /*end of search bar stuff*/
 .btn-primary {
     border-color: rgb(67, 21, 109);
