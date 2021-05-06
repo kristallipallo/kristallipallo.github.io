@@ -7,8 +7,14 @@ body {
     color: antiquewhite;
 }
 
+main {
+    padding: 270px;
+}
+
 header {
     border-bottom: 3px solid rgb(218, 165, 32);
+    background-color: black;
+    height: 230px;
 }
 
 li {
