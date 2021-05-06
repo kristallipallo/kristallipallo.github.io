@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horoskoopit</title>
+    <title>Astrologia</title>
     <link rel="stylesheet" href="/vendor/bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/style/style-bootstrap.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
@@ -26,7 +26,7 @@
         <nav>
             <ul class="nav ">
                 <li class="nav-item btn btn-primary">
-                    <a class="nav-link" href="horoskooppi.html">Horoskooppi</a>
+                    <a class="nav-link" href="astrologia.html">Astrologia</a>
                 </li>
                 <li class="nav-item btn btn-primary">
                     <a class="nav-link" href="tarot.html">Tarot-kortit</a>
@@ -38,7 +38,7 @@
                     <a class="nav-link" href="ennustuksesi.html">Ennustuksesi</a>
                 </li>
            
-               <li> <a href="#">Kirjaudu sisään</a></li>
+               <li> <a  id="kirjaudu" href="#">Kirjaudu sisään</a></li>
                <div class="search">
             <li><form class="float-lg-right" action="">
                 <input type="search">
@@ -51,8 +51,8 @@
     </header>
     <main class="container text-center">
         <h2>Astrologia</h2>
-        <div class="row">
-            <div class="col-sm-auto">
+        <div class="row justify-content-md-center">
+            <div class="col-10">
                 <p>Astrologia (m.kreik. άστρον, astron, tähti ja λόγος, logos, oppi) eli tähdistäennustaminen on oppi,
                     jonka mukaan taivaankappaleiden suhteellisista asemista ja välisistä kulmista voidaan päätellä Maan
                     tapahtumien yksityiskohtia kuten ihmissuhteita ja ihmisten kohtaloita sekä tulkita luonteita.[1][2]
@@ -67,9 +67,9 @@
 
                 </p>
             </div>
-            <div class="col-sm">
-            <h3>Historia</h3>
-            <p>Astrologian historia juontaa juurensa muinaisiin sivilisaatioihin, joissa papit seurasivat tähtien
+            <div class="col-10">
+            <h3 id="historia">Historia</h3>
+            <p><figure class="vintage"><img class="vintage" src="/media/vintage_astrology_white.png" alt="Vintage Astrology"><figcaption>Kuva 1. Astrologiakartta</figcaption> </figure>Astrologian historia juontaa juurensa muinaisiin sivilisaatioihin, joissa papit seurasivat tähtien
                 liikettä. Myös ennustaminen kiinnosti silloin ihmisiä. Ennustettiin uhrieläimistä, mutta myös tähdistä.
                 Muinaisessa Harappan kulttuurin Intiassa saatettiin harjoittaa astrologiaa[3]. Paremmin tunnettu on
                 Kaldean ja Babylonian astrologia. Kreikkaan astrologia saapui muutama sata vuotta ennen ajanlaskua.
@@ -128,7 +128,7 @@
                 julkaistiin lehdessä karttoineen, ja se sai suuren suosion. Ihmiset ottivat yhteyttä toimitukseen ja
                 vaativat lisää vastaavaa.[12]</p>
         </div>
-        <div>
+        <div class="col-10">
             <h3>Eri kulttuurien perinteet</h3>
             <p>Useimmilla kulttuureilla on ollut omat astrologiset perinteensä. Jo muinaisilla babylonialaisilla sekä
                 keskiamerikkalaisilla mayoilla ja asteekeilla oli monimutkaiset astrologiset järjestelmät. Länsimainen
@@ -201,7 +201,7 @@
                 Myös satunnaisten tapahtumien, kuten kirkkaan komeetan ilmestymisen, on uskottu ennustavan suuria
                 onnettomuuksia.</p>
         </div>
-        <div id="uses">
+        <div class="col-10" id="uses">
             <h3>Käyttötavat</h3>
             <p>Ennustavassa astrologiassa astrologi pyrkii joko ennustamaan tulevaisuutta tarkasti tai ainakin
                 ennakoimaan suuntauksia ja valottamaan mahdollisia kehityskulkuja. Ennustava astrologi määrittelee
@@ -239,7 +239,7 @@
                 eivät useinkaan arvosta horoskooppeja tekeviä aurinkomerkkiastrologeja, vaan katsovat että nämä
                 turmelevat astrologian julkikuvan.[21]</p>
         </div>
-        <div id="suosio">
+        <div class="col-10" id="suosio">
             <h3>Suosio</h3>
             <p>Tutkimusten perusteella 20–55 prosenttia länsimaisista ihmisistä uskoo tähtien vaikuttavan maanpäälliseen
                 elämään. Astrologia vetoaa länsimaissa naisiin selvästi useammin kuin miehiin. Tutkimusten mukaan
@@ -250,7 +250,7 @@
                 ei 1900-luvulla katkennut kommunistihallinnon aikana. Astrologia on laajasti hyväksyttyä myös Japanissa.
                 Latinalaisessa Amerikassa astrologia on erityisen suosittua Brasiliassa.[22]</p>
         </div>
-        <div id="tiede">
+        <div class="col-10" id="tiede">
             <h3>Tiede ja astrologia</h3>
             <p>Nykyiset astrologit väittävät mielellään, että heidän oppinsa perustuu monituhatvuotiseen kokemukseen,
                 joka olisi vahvistanut ne oikeiksi. Arvostelijat kysyvät, miten väitetyt vastaavuudet tähtien asennon ja
@@ -312,14 +312,15 @@
                 tilastollisesti merkitsevä tulos. Niihin on viitattu Tarvaisen ja Nikulan orientaatiossa
                 astrologiaan[31].</p>
         </div>
-        <div id="sources">
+        <div class="row">
+        <div class="col-6" id="sources">
             <h3>Lähteet</h3>
             <ul>
                 <li>Campion, Nicholas: Mihin uskovat astrologit. (What do Astrologers Believe?, 2006.) Suomentanut Jaana Iso-Markku. Helsingissä: Otava, 2008. ISBN 978-951-1-21644-5.</li>
                 <li>Mustelin, Nils: Astrologian oudot maailmat. Teoksessa Häyry, Heta & Karttunen, Hannu & Virtanen, Matti (toim.): Paholaisen asianajaja. Opaskirja skeptikolle. Helsinki: Ursa, 1989. ISBN 951-9269-48-7.</li>
             </ul>
         </div>
-        <div id="viitteet">
+        <div class="col-6" id="viitteet">
             <h3>Viitteet</h3>
             <ol>
                 <li>Hakusana astrologia teoksessa Spectrum tietokeskus. 16-osainen tietosanakirja. 1, A–Bak. Helsinki Porvoo: WSOY, 1976. ISBN 951-0-07240-0.</li>
@@ -330,7 +331,7 @@
             <li>Campion 2008, s. 42.</li>
             <li>Campion 2008, s. 43–44.</li>
             <li>Mustelin 1989.</li>
-            <li>Laurento, Maarit: Astrologian ja tieteen välinen keskustelu (PDF) paranet.fi. 2001. Viitattu 4.6.2010.</ol>
+            <li>Laurento, Maarit: Astrologian ja tieteen välinen keskustelu (PDF) paranet.fi. 2001. Viitattu 4.6.2010.</li>
             <li>Campion 2008, s. 49–51.</li>
             <li>Campion 2008, s. 51–53.</li>
             <li>Dean, Geoffrey & Mather, Arthur: Sun sign columns: History, validity, and an armchair invitation rudolfhsmit.nl. Viitattu 4.6.2010.</li>
@@ -356,6 +357,7 @@
             </ol>
         </div>
     </div>
+</div>
     </main>
     <script rel="script" src = "/vendor/bootstrap-5.0.0-beta3-dist/js/bootstrap.bundle.min.js"></script>
     <script rel="script" src="/scripts/script-bootstrap.js"></script>
