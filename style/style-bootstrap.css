@@ -73,7 +73,7 @@ form:hover .fa{
 }
 
 .search{
-    position: fixed;
+    position: absolute;
     right: 10%;
 }
 /*end of search bar stuff*/
