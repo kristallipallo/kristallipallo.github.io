@@ -8,13 +8,12 @@ body {
 }
 
 main {
-    padding: 270px;
+    padding: 300px;
 }
 
 header {
     border-bottom: 3px solid rgb(218, 165, 32);
     background-color: black;
-    height: 230px;
 }
 
 li {
@@ -31,10 +30,10 @@ form{
     transition: all 1s;
     width: 50px;
     height: 50px;
-    background: white;
+    background: rgb(17, 9, 31);
     box-sizing: border-box;
     border-radius: 25px;
-    border: 4px solid white;
+    border: 4px solid rgb(17, 9, 31);
     padding: 5px;
 }
 
@@ -51,6 +50,7 @@ input{
     font-size: 1em;
     border-radius: 20px;
     padding: 0 20px;
+    background-color: rgb(121, 64, 214);
 }
 
 .fa{
@@ -62,7 +62,7 @@ input{
     top: 0;
     right: 0;
     border-radius: 50%;
-    color: #ecebf3;
+    color: antiquewhite;
     text-align: center;
     font-size: 1.2em;
     transition: all 1s;
@@ -79,7 +79,7 @@ form:hover input{
 
 form:hover .fa{
     background: #07051a;
-    color: white;
+    color: antiquewhite;
 }
 
 .search{
@@ -99,8 +99,8 @@ form:hover .fa{
 }
 
 #logo{
-    height:10%;
-    width: 10%;
+    height:100%;
+    width: 100%;
     
 }
 
@@ -226,28 +226,16 @@ img {
     #menuBtn , #closeMenuBtn  { 
         
             width: 2rem;
-        
             height: 2rem;
-        
             background-color: transparent;
-        
             background-repeat: no-repeat;
-        
             background-size: contain;
-        
             background-position: center;
-        
             text-indent: 100%;
-        
             white-space: nowrap;
-        
             overflow: hidden;
-        
             padding: 0;
-        
             border: none;
-        
             cursor: pointer;
-        
         }
 }
