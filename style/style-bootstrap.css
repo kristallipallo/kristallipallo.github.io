@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: antiquewhite;
+}
+
+main {
+    padding: 300px;
+}
+
+header {
+    border-bottom: 3px solid rgb(218, 165, 32);
+    background-color: black;
+}
+
+li {
+    margin: 1rem;
+}
+a.nav-link {
+    color:antiquewhite;
+}
+/*search bar stuff*/
+form{
+    position: relative;
+    left: 90%;
+    transform: translate(-50%,-90%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: rgb(17, 9, 31);
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid rgb(17, 9, 31);
+    padding: 5px;
+}
+
+input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+    background-color: rgb(121, 64, 214);
+}
+
+.fa{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: antiquewhite;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+form:hover{
+    width: 200px;
+    cursor: pointer;
+}
+
+form:hover input{
+    display: block;
+}
+
+form:hover .fa{
+    background: #07051a;
+    color: antiquewhite;
+}
+
+.search{
+    position: absolute;
+    right: 10%;
+}
+/*end of search bar stuff*/
+.btn-primary {
+    border-color: rgb(67, 21, 109);
+    background: linear-gradient(0deg, rgb(17, 9, 31) 0%, rgba(35, 18, 63,1) 37%, rgb(121, 64, 214) 100%) !important;
+}
+
+.btn-primary:hover {
+    border-color:rgba(35, 18, 63,1);
+    background: linear-gradient(180deg, rgb(17, 9, 31) 0%, rgba(35, 18, 63,1) 37%, rgb(121, 64, 214) 100%) !important;
+    transition-duration: 0.3s;
+}
+
+#logo{
+    height:100%;
+    width: 100%;
+    
+}
+
+.hidden-desk{
+    display: none;
+}
+.hidden-mob{
+    display:none;
+}
+
+@font-face {
+    font-family: headingFont;
+    src: url(/media/Merriweather/Merriweather-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family: titleFont;
+    src: url(/media/Merriweather/Merriweather-Bold.ttf);
+}
+
+@font-face {
+    font-family: contentFont;
+    src: url(/media/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+}
+
+#kirjaudu {
+    font-family: contentFont;
+    text-decoration: none;
+    color:antiquewhite;
+}
+
+h1 {
+    font-family: headingFont;
+}
+
+h2, h3, h4 {
+    font-family: titleFont;
+}
+
+img {
+    border-radius: 5%;
+    height: 20rem;
+    width: 20rem;
+}
+
+.vintage {
+    float: left;
+}
+
+#merkit {
+   float: right;
+}
+
+@media (max-width:992px) {
+    .btn-primary{
+        text-decoration: none !important;
+        display: flex;
+        text-align: center;
+        color:antiquewhite !important;
+        font-family: contentFont !important;
+        font-size: 1.5rem !important;
+        background-color: none !important;
+        padding: 0 !important;
+        background: black !important;
+        margin-top:2rem !important;
+        ;
+
+    }
+
+    .btn {
+        border: none !important;
+    }
+
+    .btn-primary:hover{
+        background: black;
+    }
+
+    #menu {
+
+        background-color: rgb(0, 0, 0);
+        position: fixed;
+        top: 0;
+        left: -100%;
+        bottom: 0;
+        width: 100%;
+        transition: left .5s;
+        z-index: 9999;
+        display: flex;
+        align-self:flex-end;
+        
+    
+    }
+    
+    .topnav{
+        display:flex;
+        justify-content: center;
+        border-bottom: #daa520 2px solid;
+        background-color: black;
+        overflow: hidden;
+        position:fixed;
+        width:100%;
+        top:0;
+    }
+    #menuBtn{
+        display:flex;
+        background-image: url(/media/icon-menu.svg);
+        position: absolute;
+        right: 2rem;
+        top:2rem;
+        
+    }
+    #closeMenuBtn{
+        display:flex;
+        background-image: url(/media/icon-close.svg);
+        position: absolute;
+        margin-right: 2rem;
+        
+    }
+    #menu.open{
+        left:0;
+    }
+
+    #menuBtn , #closeMenuBtn  { 
+        
+            width: 2rem;
+            height: 2rem;
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            text-indent: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            padding: 0;
+            border: none;
+            cursor: pointer;
+        }
+}

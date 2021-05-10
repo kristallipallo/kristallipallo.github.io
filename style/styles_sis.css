@@ -159,12 +159,12 @@ li a, a:visited {
     justify-content: center;
     align-items: center;
 }
-@media screen and (max-width: 1000px){   
+@media screen and (max-width: 992px){   
     li{
         text-decoration: none;
         display: flex;
         text-align: center;
-        color:antiquewhite;
+        color:antiquewhite !important;
         font-family: contentFont;
         font-size: 1.5rem;
         background-color: none;
