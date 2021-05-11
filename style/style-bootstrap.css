@@ -8,7 +8,7 @@ body {
 }
 
 main {
-    padding: 300px;
+    padding: 250px;
 }
 
 header {
@@ -17,7 +17,7 @@ header {
 }
 
 li {
-    margin: 1rem;
+    margin: 0.5rem;
 }
 a.nav-link {
     color:antiquewhite;
@@ -53,7 +53,7 @@ input{
     background-color: rgb(121, 64, 214);
 }
 
-.fa{
+.fa {
     box-sizing: border-box;
     padding: 10px;
     width: 42.5px;
@@ -82,11 +82,28 @@ form:hover .fa{
     color: antiquewhite;
 }
 
-.search{
+.search {
+    width:fit-content;
+    float: right;
     position: absolute;
-    right: 10%;
+    top:40%;
+    right:0;
 }
+
 /*end of search bar stuff*/
+
+
+
+#kirjaudu, #div_kirjaudu {
+    font-family: contentFont;
+    text-decoration: none;
+    color:antiquewhite;
+    position: relative;
+    float: right;
+    right: 2rem;
+    bottom: 1.5rem;
+}
+
 .btn-primary {
     border-color: rgb(67, 21, 109);
     background: linear-gradient(0deg, rgb(17, 9, 31) 0%, rgba(35, 18, 63,1) 37%, rgb(121, 64, 214) 100%) !important;
@@ -98,10 +115,14 @@ form:hover .fa{
     transition-duration: 0.3s;
 }
 
+.logo {
+    margin-bottom: 0.5rem;
+}
+
 #logo{
-    height:100%;
-    width: 100%;
-    
+    height:80%;
+    width: 80%;
+    border-radius:0;
 }
 
 .hidden-desk{
@@ -124,12 +145,6 @@ form:hover .fa{
 @font-face {
     font-family: contentFont;
     src: url(/media/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
-}
-
-#kirjaudu {
-    font-family: contentFont;
-    text-decoration: none;
-    color:antiquewhite;
 }
 
 h1 {
@@ -155,10 +170,11 @@ img {
 }
 
 @media (max-width:992px) {
+    
     .btn-primary{
         text-decoration: none !important;
-        display: flex;
-        text-align: center;
+        display: flex !important;
+        text-align: center !important;
         color:antiquewhite !important;
         font-family: contentFont !important;
         font-size: 1.5rem !important;
@@ -166,16 +182,15 @@ img {
         padding: 0 !important;
         background: black !important;
         margin-top:2rem !important;
-        ;
-
     }
 
     .btn {
         border: none !important;
     }
 
-    .btn-primary:hover{
-        background: black;
+    .btn-primary:hover {
+        border:none;
+        background: black !important;
     }
 
     #menu {
@@ -190,11 +205,11 @@ img {
         z-index: 9999;
         display: flex;
         align-self:flex-end;
+        height: 100% !important;
         
-    
     }
     
-    .topnav{
+    .topnav {
         display:flex;
         justify-content: center;
         border-bottom: #daa520 2px solid;
@@ -204,7 +219,7 @@ img {
         width:100%;
         top:0;
     }
-    #menuBtn{
+    #menuBtn {
         display:flex;
         background-image: url(/media/icon-menu.svg);
         position: absolute;
@@ -212,12 +227,12 @@ img {
         top:2rem;
         
     }
-    #closeMenuBtn{
+    #closeMenuBtn {
         display:flex;
         background-image: url(/media/icon-close.svg);
         position: absolute;
-        margin-right: 2rem;
-        
+        right: 2rem;
+        top:2rem;
     }
     #menu.open{
         left:0;
@@ -237,5 +252,28 @@ img {
             padding: 0;
             border: none;
             cursor: pointer;
+        }
+
+        #logo, .logo {
+            width: 60%;
+            height: 60%;
+        }
+
+        ul.nav {
+            flex-direction: column !important;
+            justify-content: flex-start !important;
+        }   
+
+        #div_kirjaudu {
+            position: relative;
+            height:fit-content;
+            bottom:5rem;
+        }
+
+        .search, form {
+            position: absolute;
+            left: 5rem;
+            bottom:0;
+            
         }
 }
