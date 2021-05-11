@@ -8,7 +8,7 @@ body {
 }
 
 main {
-    padding: 250px;
+    padding: 200px;
 }
 
 header {
@@ -153,6 +153,7 @@ h1 {
 
 h2, h3, h4 {
     font-family: titleFont;
+    margin-top: 2rem;
 }
 
 img {
@@ -165,8 +166,21 @@ img {
     float: left;
 }
 
+#historia {
+    margin-left: 58rem;
+}
+
 #merkit {
    float: right;
+}
+
+#kiinalainen {
+    float: left;
+    margin-right: 1rem;
+}
+
+#chinese {
+    margin-left: 22rem;
 }
 
 @media (max-width:992px) {
@@ -264,10 +278,12 @@ img {
             justify-content: flex-start !important;
         }   
 
-        #div_kirjaudu {
-            position: relative;
+        #div_kirjaudu, #kirjaudu {
+            position: absolute;
             height:fit-content;
-            bottom:5rem;
+            width:fit-content;
+            bottom:1rem;
+            left: 1 rem;
         }
 
         .search, form {
