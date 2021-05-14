@@ -154,6 +154,7 @@ h1 {
 h2, h3, h4 {
     font-family: titleFont;
     margin-top: 3rem;
+    margin-bottom: 2rem;
 }
 
 img {
@@ -162,12 +163,12 @@ img {
     width: 20rem;
 }
 
-.vintage {
-    float: left;
+#historia {
+    
 }
 
-#historia {
-    margin-left: 58rem;
+.vintage {
+    float: left;
 }
 
 .merkit {
@@ -179,8 +180,15 @@ img {
     margin-right: 1rem;
 }
 
-#chinese {
+.uses {
+    position:relative;
     margin-left: 22rem;
+}
+
+.birthchart {
+    float: left;
+    margin: 1rem;
+    border-radius: unset;
 }
 
 @media (max-width:992px) {
