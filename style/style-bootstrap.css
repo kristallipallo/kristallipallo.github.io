@@ -153,7 +153,7 @@ h1 {
 
 h2, h3, h4 {
     font-family: titleFont;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 img {
@@ -170,11 +170,11 @@ img {
     margin-left: 58rem;
 }
 
-#merkit {
+.merkit {
    float: right;
 }
 
-#kiinalainen {
+.kiinalainen {
     float: left;
     margin-right: 1rem;
 }
