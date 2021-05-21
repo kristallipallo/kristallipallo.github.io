@@ -22,6 +22,7 @@ li {
 a.nav-link {
     color:antiquewhite;
 }
+
 /*search bar stuff*/
 form{
     position: relative;
@@ -314,4 +315,12 @@ figcaption {
             bottom:18rem;
             
         }
+}
+
+/*Nooran säätämiset, liittyy tarot-sivun sisältöön*/
+#minor-head{
+    position:sticky; 
+    top: 150px;
+    background-color: black;
+    border-bottom:#daa520 2px solid; 
 }
