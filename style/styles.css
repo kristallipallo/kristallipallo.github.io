@@ -13,18 +13,18 @@ main {
 
 @font-face {
     font-family: headingFont;
-    src: url(media/Merriweather/Merriweather-BlackItalic.ttf);
+    src: url(/media/Merriweather/Merriweather-BlackItalic.ttf);
 
 }
 
 @font-face {
     font-family: titleFont;
-    src: url(media/Merriweather/Merriweather-Bold.ttf);
+    src: url(/media/Merriweather/Merriweather-Bold.ttf);
 }
 
 @font-face {
     font-family: contentFont;
-    src: url(media/Josefin_Sans/JosefinSans-VariableFont_wght.ttf)
+    src: url(/media/Josefin_Sans/JosefinSans-VariableFont_wght.ttf)
 }
 
 /*Navi start*/
@@ -101,11 +101,9 @@ form:hover .fa{
 }
 
 .search {
-    width:fit-content;
     float: right;
     position: absolute;
-    top:40%;
-    right:0;
+    right:4rem;
 }
 
 /*end of search bar stuff*/
@@ -271,14 +269,13 @@ h1 {
             position: absolute;
             height:fit-content;
             width:fit-content;
-            bottom:16rem;
+            top:15rem;
             left: 5rem !important;
         }
 
         .search, form {
             position: absolute;
             left: 5rem;
-            bottom:18rem;
-            
+            top:20rem;
         }
 }

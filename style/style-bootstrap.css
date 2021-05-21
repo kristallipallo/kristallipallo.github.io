@@ -83,11 +83,9 @@ form:hover .fa{
 }
 
 .search {
-    width:fit-content;
     float: right;
     position: absolute;
-    top:40%;
-    right:0;
+    right:4rem;
 }
 
 /*end of search bar stuff*/
@@ -162,6 +160,10 @@ img {
     border-radius: 5%;
     height: 20rem;
     width: 20rem;
+}
+
+img:hover {
+    transform:scale(2);
 }
 
 figcaption {
@@ -304,14 +306,13 @@ figcaption {
             position: absolute;
             height:fit-content;
             width:fit-content;
-            bottom:16rem;
+            top:15rem;
             left: 5rem !important;
         }
 
         .search, form {
             position: absolute;
             left: 5rem;
-            bottom:18rem;
-            
+            top:20rem;
         }
 }
