@@ -5,20 +5,190 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kristallipallo</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/vendor/bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/style/style-bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body>
     <div id="menutop">
-    <header>
-        <img src="media/nmg1.jpg" id="logo">
-    </header>
-    <nav>
-        <button>Horoskooppi</button>
-        <button>Tarot-kortit</button>
-        <button>Kädestä ennustaminen</button>
-        <button>Ennustuksesi</button>
-    </nav>
-    <div id="searchBar">search</div>
+        <header class="fixed-top container">
+            <div class="invisible">
+                <h1>Kristallipallo</h1>
+            </div>
+            <div class="row">
+                <figure class="logo col-sm-2">
+                    <a href="index.html"><img id="logo" src="media/kp_logo.svg" alt="Kristallipallo logo"></a>
+                </figure>
+    
+                <button id="menuBtn" class="hidden-desk"></button>
+                <nav id="menu" class="col-sm-9 h-25 p-0 m-0">
+                    <button id="closeMenuBtn" class="hidden-desk"></button>
+                    <div class="">
+                        <ul class="nav justify-space-evenly">
+                            <li class="nav-item btn btn-primary">
+                                <a class="nav-link" href="astrologia.html">Astrologia</a>
+                            </li>
+                            <li class="nav-item btn btn-primary">
+                                <a class="nav-link" href="tarot.html">Tarot-kortit</a>
+                            </li>
+                            <li class="nav-item btn btn-primary">
+                                <a class="nav-link" href="kadestaennustaminen.html">Kädestä ennustaminen</a>
+                            </li>
+                            <li class="nav-item btn btn-primary">
+                                <a class="nav-link" href="ennustuksesi.html">Ennustuksesi</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="search col-sm-1">
+                        <form action="">
+                            <input type="search">
+                            <i class="fa fa-search"></i>
+                        </form>
+                    </div>
+                    <div id="div_kirjaudu" class="col-sm-2">
+                        <a id="kirjaudu" href="#">Kirjaudu sisään</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    
 </div>
+<main class="container">
+    <h2 class="text-center">Tarot</h2>
+    <div class="row justify-content-md-center">
+        <h3 id="historia">Historia</h3>
+        <div class="col-10">
+            <figure class="vintage m-3"><img class="vintage" src="media/tarot1-death.jpg"
+                    alt="Death card">
+                <figcaption>Kuolema-kortti</figcaption>
+            </figure>
+            <!--Historia-osuus tähän-->
+            <p>Tarot-korteilla ennustamista on harjoitettu jo 1400-luvun Italiassa, mutta niiden suosio kasvoi okkultistisissa yhteisöissä vasta 1500-luvulla Ranskassa. 
+                Ranskasta tarottien käyttö levisi Britannian okkultisteille, erityisesti Kultaisen Aamunkoiton hermeettisen järjestön jäsenien kesken. 
+                Kultaisen aamunkoiton jäsenet Arthur Edward Waite (ammatiltaan runoilija) sekä artisti Pamela Colman Smith loivat 1900-luvun vaikuttavimman Tarot-pakan. 
+                Kyseinen pakka oli ensimmäinen, täydellinen, vain ennustukseen tarkoitettu Tarot-pakka, jota myös okkultistisiin seuroihin kuulumattomat henkilöt pystyivät hyödyntämään. 
+                Tämän pakan myötä Tarotin suosio kasvoi, joskin hitaasti, kunnes USA:ssa 1960-luvulla Tarotit levisivät suurelle yleisölle ja pakkoja alkoi ilmestyä enemmänkin.
+                
+                Perinteisessä Tarot-pakassa on yhteensä 78 korttia, jotka on jaettu Major ja Minor Arcanaan. Seuraavassa osiossa kerrotaan Major Arcanasta.
+                 </p>
+        </div>
+        <div class="col-10">
+            <h3 id="Major">Major Arcana</h3>
+            <p>Major Arcana on Tarot-pakassa olevista korteista koostuva ryhmä kortteja, jotka kuvastavat elämän suuria muutoksia sekä asteita. 
+                Nämä kortit ovat pakassa olevista korteista voimakkaimpia ja jokainen kortti kertoo sen nostajan henkisestä matkasta. 
+                Sen vuoksi Major-kortit vaativat erityistä huomiota; jos niitä tulee Tarot-luennon aikana useampia, edessä voi olla suuria muutoksia, joilla on pitkäaikaisia vaikutuksia. 
+                Major Arcanaan kuuluvia kortteja on standardissa, 78-kortin pakassa yleensä 22 kappaletta. 
+                Korttien numerointi alkaa nollasta.   
+            </p>
+            <table id="major-table" class="table">
+                <thead>
+                <th scope="col"> Kortin numero</th>
+                <th scope="col">Kortin nimi</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">0</th>
+                    <td>Fool</td>
+                </tr>
+                
+                <tr>
+                    <th scope="row">1</th>
+                    <td>The Magician</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Fool</td>
+                </tr>
+                
+                <tr>
+                    <th scope="row">3</th>
+                    <td>The Magician</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Fool</td>
+                </tr>
+                
+                <tr>
+                    <th scope="row">5</th>
+                    <td>The Magician</td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>Fool</td>
+                </tr>
+                
+                <tr>
+                    <th scope="row">7</th>
+                    <td>The Magician</td>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <td>Fool</td>
+                </tr>
+                
+                <tr>
+                    <th scope="row">9</th>
+                    <td>The Magician</td>
+                </tr>
+                <tr>
+                    <th scope="row">10</th>
+                    <td>Fool</td>
+                </tr>
+                
+                <tr>
+                    <th scope="row">11</th>
+                    <td>The Magician</td>
+                </tr>
+                <tr>
+                    <th scope="row">12</th>
+                    <td>Fool</td>
+                </tr>
+                
+                <tr>
+                    <th scope="row">13</th>
+                    <td>The Magician</td>
+                </tr>
+                <tr>
+                    <th scope="row">14</th>
+                    <td>Fool</td>
+                </tr>
+                
+                <tr>
+                    <th scope="row">15</th>
+                    <td>The Magician</td>
+                </tr>
+                <tr>
+                    <th scope="row">16</th>
+                    <td>Fool</td>
+                </tr>
+                
+                <tr>
+                    <th scope="row">17</th>
+                    <td>The Magician</td>
+                </tr>
+                <tr>
+                    <th scope="row">18</th>
+                    <td>Fool</td>
+                </tr>
+                
+                <tr>
+                    <th scope="row">19</th>
+                    <td>The Magician</td>
+                </tr>
+                <tr>
+                    <th scope="row">20</th>
+                    <td>The Magician</td>
+                </tr>
+                <tr>
+                    <th scope="row">21</th>
+                    <td>The Magician</td>
+                </tr>
+            </tbody>
+
+            </table>
+            
+            
+        </div>
 </body>
 </html>
