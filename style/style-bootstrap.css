@@ -319,9 +319,13 @@ figcaption {
 }
 
 /*Nooran säätämiset, liittyy tarot-sivun sisältöön*/
-#minor-head{
+.tarot-head{
     position:sticky; 
     top: 150px;
     background-color: black;
-    border-bottom:#daa520 2px solid; 
+    border-bottom: 2px solid #daa520; 
+    color: antiquewhite;
+}
+.table{
+    color:antiquewhite;
 }
