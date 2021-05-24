@@ -5,61 +5,117 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horoskoopit</title>
+    <title>Astrologia</title>
     <link rel="stylesheet" href="/vendor/bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/style/style-bootstrap.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
         integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- icon library for hamburger -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <header class="text-center">
-        <div class="container py-3">
-            <img id="logo" src="media/kp_logo.svg">
+    <!--Navi start-->
+    <header class="fixed-top container">
+        <div class="invisible">
+            <h1>Kristallipallo</h1>
         </div>
-        <div class="d-flex justify-content-center">
-            
-        <nav>
-            <ul class="nav ">
-                <li class="nav-item btn btn-primary">
-                    <a class="nav-link" href="horoskooppi.html">Horoskooppi</a>
-                </li>
-                <li class="nav-item btn btn-primary">
-                    <a class="nav-link" href="tarot.html">Tarot-kortit</a>
-                </li>
-                <li class="nav-item btn btn-primary">
-                    <a class="nav-link" href="kadestaennustaminen.html">Kädestä ennustaminen</a>
-                </li>
-                <li class="nav-item btn btn-primary">
-                    <a class="nav-link" href="ennustuksesi.html">Ennustuksesi</a>
-                </li>
-           
-               <li> <a href="#">Kirjaudu sisään</a></li>
-               <div class="search">
-            <li><form class="float-lg-right" action="">
-                <input type="search">
-                <i class="fa fa-search"></i></li>
-                </div>
-            </form>
-        </ul>
-        </div>
-            </div>
-        </nav>
-    </header>
-    <main class="container text-center">
-        <h2>Kädestä ennustaminen</h2>
-<div class="row">
-    <div class="col-sm-auto">
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates accusamus culpa illum doloribus mollitia nobis hic, nisi, iste doloremque reiciendis officiis nam ipsa maiores, minima suscipit consequatur fugiat praesentium eaque?
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam laborum totam aliquid ipsa officia eligendi ad, repellendus, consectetur explicabo officiis dignissimos quis praesentium hic sed asperiores, temporibus mollitia nisi nesciunt!
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto deleniti vero minima blanditiis dolorem atque asperiores earum architecto quas, sapiente dolorum! Possimus quae eligendi molestiae necessitatibus quas minus quos magni.
+        <div class="row">
+            <figure class="logo col-sm-2">
+                <a href="index.html"><img id="logo" src="media/kp_logo.svg" alt="Kristallipallo logo"></a>
+            </figure>
 
-</p>
-    </div>
-<h3></h3>
-</div>
+            <button id="menuBtn" class="hidden-desk"></button>
+            <nav id="menu" class="col-sm-8 h-25">
+                <button id="closeMenuBtn" class="hidden-desk"></button>
+                <div class="">
+                    <ul class="nav justify-space-evenly">
+                        <li class="nav-item btn btn-primary">
+                            <a class="nav-link" href="astrologia.html">Astrologia</a>
+                        </li>
+                        <li class="nav-item btn btn-primary">
+                            <a class="nav-link" href="tarot.html">Tarot-kortit</a>
+                        </li>
+                        <li class="nav-item btn btn-primary">
+                            <a class="nav-link" href="kadestaennustaminen.html">Kädestä ennustaminen</a>
+                        </li>
+                        <li class="nav-item btn btn-primary">
+                            <a class="nav-link" href="ennustuksesi.html">Ennustuksesi</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search col-sm-1">
+                    <form action="">
+                        <input type="search">
+                        <i class="fa fa-search"></i>
+                    </form>
+                </div>
+                <div id="div_kirjaudu" class="col-sm-1">
+                    <a id="kirjaudu" href="#">Kirjaudu sisään</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--Navi end-->
+    <main class="container">
+        <h2 class="text-center">Kädestä ennustaminen</h2>
+        <p>Kädestä ennustaminen tarkoittaa ennustamista käden ominaisuuksien perusteella. Kädessä on erilaisia juonteita ja viivoja mitkä näkyvät alla olevassa kuvasarjassa. Elämänviiva on termi, jolla tarkoitetaan kämmenessä olevista pitkistä rypyistä lähinnä peukaloa olevaa. Elämänviiva on yksi käden neljästä suuresta viivasta, joista tärkeimmät ovat elämän viivan lisäksi sydämen viiva ja pään viiva, joista väitteiden mukaan voidaan tulkita se, ajatteleeko ihminen järjellään vai luottaako tunteisiinsa. Lisäksi neljäs viiva, eli kohtalon viiva on myös tärkeä. Jos se on ihmisellä vahvin, hänen sanotaan elävän työnsä vuoksi.
+ Elämänviivan uskotaan osoittavan henkilön elinvoimaa, fyysistä kuntoa ja yleistä tilannetta, sekä pystyvän kertomaan ennalta suuret elämänmuutokset. Sen on uskottu voivan kertoa ihmisen eliniän pituuden ja myös risteävien ihmiskohtaloiden lukumäärän, mutta nykyaikaiset kädestäennustajat eivät yleisesti usko, että ihmisen elinaika riippuu hänen elämänviivan pituudestaan.
+Mikäli ihmisen elämänviiva on pisin neljästä suuresta viivasta, ajattelee hän ennustamisen periaatteiden mukaan enimmäkseen kaikkea, joka liittyy ihmisen fyysiseen itseen ja on etusijalla. Ihminen elää vahvalla fyysisellä lihasenergialla.</p>
+        <div class="row justify-content-md-center">
+            <div class="col-10 m-b-2">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="media/kasi/elamanviiva.jpg" class="d-block w-100" alt="..." style="width:400px;height:600px">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5 style="color: red;">Elämänviiva</h5>
+                          <p style="color: red;">Osoittaa henkilön elinvoimaa, fyysistä kuntoa ja yleistä tilannetta.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="media/kasi/paanviiva.jpg" class="d-block w-100" alt="..." style="width:400px;height:600px">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5 style="color: red;">Päänviiva</h5>
+                          <p style="color: red;">Kertoo lahjakkuudesta, kehittyneestä arviointikyvystä, hyvästä itseluottamuksesta ja vahvasta tahdosta.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="media/kasi/sydamenviiva.jpg" class="d-block w-100" alt="..." style="width:400px;height:600px">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5 style="color: red;">Sydämenviiva</h5>
+                          <p style="color: red;">Kertoo rakkauselämästä.</p>
+                        </div>
+                      </div>
+        
+                      <div class="carousel-item">
+                        <img src="media/kasi/kohtalonviiva.jpg" class="d-block w-100" alt="..." style="width:400px;height:600px">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5 style="color: red;">Kohtalonviiva</h5>
+                          <p style="color: red;">Viiva paljastaa ihmisen kohtalon. Pitkä viiva kertoo itsevarmasta luonteesta, lyhyt viiva kärsimättömyydestä ja äkkipikaisuudesta.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+</div></div>
     </main>
-    <script> src = "/vendor/bootstrap-5.0.0-beta3-dist/js/bootstrap.bundle.min.js"</script>
+    <script rel="script" src="/vendor/bootstrap-5.0.0-beta3-dist/js/bootstrap.bundle.min.js"></script>
+    <script rel="script" src="/scripts/script-bootstrap.js"></script>
 </body>
 
 </html>
