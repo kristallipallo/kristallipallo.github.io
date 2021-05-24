@@ -1,0 +1,200 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color:antiquewhite;
+    margin: 0;
+    width: 100%;
+}
+
+@font-face {
+    font-family: headingFont;
+    src: url(media/Merriweather/Merriweather-BlackItalic.ttf);
+
+}
+
+@font-face {
+    font-family: titleFont;
+    src: url(media/Merriweather/Merriweather-Bold.ttf);
+}
+
+@font-face {
+    font-family: contentFont;
+    src: url(media/Josefin_Sans/JosefinSans-VariableFont_wght.ttf)
+}
+
+#logo{
+    margin: 20px;
+    height:80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+ul {
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+li{
+    text-decoration: none;
+    text-align: center;
+    display: inline;
+    margin: 4rem;
+    margin-top: 3.75rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    color:antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    background: linear-gradient(0deg, rgb(17, 9, 31) 0%, rgba(35, 18, 63,1) 37%, rgb(121, 64, 214) 100%);
+ 
+}
+
+li:hover {
+    background: linear-gradient(180deg, rgb(17, 9, 31) 0%, rgba(35, 18, 63,1) 37%, rgb(121, 64, 214) 100%);
+    transition-duration: 0.3s;
+}
+
+li a {
+    text-decoration: none;
+    color:antiquewhite;
+}
+
+li a:visited {
+    color:antiquewhite;
+}
+
+#menutop{
+    display:flex;
+    justify-content: flex-start;
+    border-bottom: goldenrod 2px solid;
+    background-color: black;
+    overflow: hidden;
+    position: sticky;
+    width:100%;
+    top:0;
+    margin-bottom: 50px;
+}
+#searchBar{
+    border-radius: 50%;
+    margin-top:2rem;
+    margin-left: 3rem;
+}
+
+#kirjaudu {
+    color:antiquewhite;
+    margin-left: 5rem;
+    margin-right: -5.5rem;
+    
+
+}
+
+#etusivunkuva {
+    margin-bottom: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+    /*width ja height noilla arvoilla tekee yhdessä kuvasta responsiivisen.*/
+}
+ *{
+    box-sizing: border-box;
+}
+ /*Homma rupes pelittää kun laittoi prosentteja eikä pikseleitä.
+#ekapalkki {
+    flex: 10%;
+    padding: 20px;
+    border-radius: 3px;
+    margin-left: 25%; 
+    margin-right: 25%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    display: grid;  tätä ei tarvita tässä mutta kun on useampia kolumneja vierekkäin sitä tarvitaan
+    justify-content: center;
+
+}*/
+/*
+section {
+    width: 400px;
+    border: 1px solid white;
+
+}
+*/
+* {
+    box-sizing: border-box;
+}
+/* sectionin sisällä div-rinnakkaispalkit */
+section {
+  /*  position: relative; /*Tämän takia menee navin yli, mutta ehkä tarvitaan jotta palkinteksti ja log voidaan erottaa*/
+    display: flex; /* Oli alunperin grid*/
+    justify-content: center; /* pitää laatikot keskellä*/
+   /* align-content: center;  /* Tekeekö lie mitään*/
+    grid-auto-flow: column; /* Tämäkään ei tunnu tekevän mitään*/
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    gap: 40px;
+
+}
+/*
+.palkki{
+    color: antiquewhite;
+    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(35, 18, 63,1) 37%, rgb(121, 64, 214) 100%);
+    padding: 100px;
+    height: 480px;
+    width: 960px;
+  /*  position: absolute; */ /*Liittyy section position: relative;*/
+   /* display: inline-block;
+    text-align: center;
+    font-family: contentFont;
+    border-radius: 10px;
+}*/
+
+
+.rinnakkaispalkki{
+  /*  border: 3px solid #73AD21;*/
+    color: antiquewhite;
+    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(35, 18, 63,1) 37%, rgb(121, 64, 214) 100%);
+    background-color: grey;
+      padding: 100px;
+      height: 400px;
+      width: 460px;
+    text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+    .palkki {      
+        padding: 100px;
+        height: 400px;
+        width: 460px;}
+}
+
+.palkkiteksti{
+    position: relative;
+  /*  border: 3px solid red;*/
+    font-family: contentFont;
+    margin-bottom: 20px;
+}
+
+.symbolit{
+   /* border: 3px solid yellow;*/
+    height: 200px;
+    width: 200px;
+}
+    .symbolit_ympyra{
+        height: 200px;
+        width: 220x;
+
+}
+#footer {
+    text-align: center;
+    font-family: contentFont;
+}
+
+h1 {
+    text-align: center;
+    font-family: contentFont;
+}
