@@ -5,18 +5,20 @@
 body{
     background-color: black;
     color:antiquewhite;
-    margin: 0;
-    width: 100%;
 }
 
 main {
-    padding: 200px;
+    padding-top: 200px;
 }
 
 h1 {
     text-align: center;
     font-family: contentFont;
 }   
+
+h2 {
+    color:antiquewhite;
+}
 
 @font-face {
     font-family: headingFont;
@@ -39,6 +41,7 @@ header {
     border-bottom: 3px solid rgb(218, 165, 32);
     background-color: black;
     display:inline-block;
+    width: 100%;
 }
 
 li {
@@ -164,9 +167,7 @@ form:hover .fa{
     height: auto;
     /*width ja height noilla arvoilla tekee yhdessä kuvasta responsiivisen.*/
 }
- *{
-    box-sizing: border-box;
-}
+
  /*Homma rupes pelittää kun laittoi prosentteja eikä pikseleitä.
 #ekapalkki {
     flex: 10%;
@@ -190,16 +191,16 @@ section {
 */
 /* sectionin sisällä div-rinnakkaispalkit */
 section {
-  /*  position: relative; /*Tämän takia menee navin yli, mutta ehkä tarvitaan jotta palkinteksti ja log voidaan erottaa*/
-    display: flex; /* Oli alunperin grid*/
-    justify-content: center; /* pitää laatikot keskellä*/
-   /* align-content: center;  /* Tekeekö lie mitään*/
-    grid-auto-flow: column; /* Tämäkään ei tunnu tekevän mitään*/
-    flex-wrap: wrap;
-    margin-bottom: 40px;
-    gap: 40px;
-
-}
+    /*  position: relative; /*Tämän takia menee navin yli, mutta ehkä tarvitaan jotta palkinteksti ja log voidaan erottaa*/
+      display: flex; /* Oli alunperin grid*/
+      justify-content: center; /* pitää laatikot keskellä*/
+     /* align-content: center;  /* Tekeekö lie mitään*/
+      grid-auto-flow: column; /* Tämäkään ei tunnu tekevän mitään*/
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+      gap: 40px;
+  
+  }
 .palkki{
     color: antiquewhite;
     /*background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(35, 18, 63,1) 37%, rgb(121, 64, 214) 100%);*/
@@ -215,17 +216,17 @@ section {
 }
 
 .rinnakkaispalkki{
-    color: antiquewhite;
-    /*background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(35, 18, 63,1) 37%, rgb(121, 64, 214) 100%);*/
-    background-color: grey;
-      padding: 100px;
+    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(35, 18, 63,1) 22%, rgb(121, 64, 214) 100%);
+   /* background-color: grey;*/
+        margin: 100px solid blue;
+   /*  border: 3px solid #73AD21;*/
+      padding: 0px;
       height: 400px;
       width: 460px;
-      display: inline-block;
-      text-align: center;
-      font-family: contentFont;
-      border-radius: 10px;
-
+    text-align: center;
+    display: inline-block;
+    border-radius: 1%;
+    z-index: -1;
 }
 
 .palkkiteksti{
@@ -247,20 +248,11 @@ section {
     font-family: contentFont;
 }
 
-h1 {
-    text-align: center;
-    font-family: contentFont;
-}
 
 @media (max-width: 1200px) {
-    .palkki {      
-        padding: 100px;
-        height: 400px;
-        width: 460px;
-    }
 
     main {
-        padding: 280px;
+        padding: 150px;
     }
 
         .btn-primary{
@@ -347,8 +339,8 @@ h1 {
             }
     
             #logo, .logo {
-                width: 60%;
-                height: 60%;
+                width: 40%;
+                height: 40%;
             }
     
             ul.nav {
@@ -369,4 +361,57 @@ h1 {
                 left: 5rem;
                 top:20rem;
             }
+
+        /*artun alkaa*/    
+    .palkki {      
+        padding: 0px;
+        height: 400px;
+        width: 460px;
+        border-radius: 0%;
+
+    }
+
+/*.palkkiteksti {
+  /* border: 3px solid red; 
+    font-family: contentFont;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}*/
+
+.palkkiteksti{
+   /* border: 3px solid red;*/
+    font-family: contentFont;
+    position: relative;
+    top: 60px;
+    z-index: 3;
+}
+
+/*.symbolit{
+   border: 3px solid yellow;
+    height: 200px;
+    width: 200px;
+}*/
+
+.symbolit{
+    margin: 75px;
+   /*  border: 3px solid yellow;*/
+    position: relative;
+    height: 200px;
+    width: 200px;
+    z-index: 2;
+}
+
+    .symbolit_ympyra{
+        margin: 75px;
+      /*  border: 3px solid yellow;*/
+       position: relative;
+        height: 220px;
+        width: 242x;
+
+}
+#footer {
+    text-align: center;
+    font-family: contentFont;
+}
+/*artun loppuu*/
 }
