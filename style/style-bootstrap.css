@@ -124,6 +124,10 @@ form:hover .fa{
     border-radius:0;
 }
 
+#logo:hover {
+    transform:none;
+}
+
 .hidden-desk{
     display: none;
 }
@@ -172,7 +176,7 @@ figcaption {
 }
 
 #historia {
-    margin-left: 58rem;
+    margin-left: 60rem;
 }
 
 .vintage {
@@ -205,6 +209,10 @@ figcaption {
 }
 
 @media (max-width:1200px) {
+
+    main {
+        padding: 280px;
+    }
     
     .btn-primary{
         text-decoration: none !important;
