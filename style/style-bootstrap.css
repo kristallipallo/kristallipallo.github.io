@@ -345,7 +345,7 @@ th {
 }
 .table {
     color:antiquewhite !important;
-   
+    justify-content: initial !important;
 }
 
 th:after,
@@ -354,10 +354,6 @@ th:before {
   position:absolute;
   left: 0;
 
-}
-
-.table {
-    justify-content: initial !important;
 }
 
 th:after {
