@@ -215,9 +215,7 @@ figcaption {
 
 @media (max-width:1200px) {
 
-    .justify-content-sm-center {
-        justify-content: initial !important;
-    }
+ /*navin jutut alkaa*/
 
     main {
         padding: 150px;
@@ -330,10 +328,8 @@ figcaption {
             top:20rem;
         }
 
-
-        
-}
-
+        /*navin jutut loppuu*/
+    }
 /*Nooran säätämiset, liittyy tarot-sivun sisältöön*/
 .tarot-head{
     position:sticky; 
@@ -347,10 +343,11 @@ figcaption {
 th {
     border-right:none !important;
 }
-.table{
-    color:antiquewhite;
+.table {
+    color:antiquewhite !important;
    
 }
+
 th:after,
 th:before {
   content: ''; 
@@ -359,6 +356,9 @@ th:before {
 
 }
 
+.table {
+    justify-content: initial !important;
+}
 
 th:after {
   bottom: -1px;
@@ -368,6 +368,7 @@ th:after {
 #major-table, #minor-table{
     border-bottom: 2px solid #daa520;
 }
+
 @media (max-width:600px){
     .tarot-head{
         position:sticky; 
