@@ -338,8 +338,7 @@ figcaption {
 }
 th:after,
 th:before {
-  content: '';
-  position: absolute;
+  content: ''; 
   left: 0;
   width: 100%;
 }
@@ -348,6 +347,7 @@ th:before {
 th:after {
   bottom: -1px;
   border-bottom: 2px solid #daa520  !important;
+  position:sticky;
 }
 @media (min-width: 300px) {
     /*Tarot-säätöä pienelle näytölle*/
