@@ -215,6 +215,10 @@ figcaption {
 
 @media (max-width:1200px) {
 
+    .justify-content-sm-center {
+        justify-content: initial !important;
+    }
+
     main {
         padding: 150px;
     }
