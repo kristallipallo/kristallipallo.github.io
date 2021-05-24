@@ -320,13 +320,15 @@ figcaption {
             left: 5rem;
             top:20rem;
         }
+
+
         
 }
 
 /*Nooran säätämiset, liittyy tarot-sivun sisältöön*/
 .tarot-head{
     position:sticky; 
-    top: 150px;
+    top: 25%;
     background-color: black;
     border-bottom: 2px solid #daa520  !important; 
     color: antiquewhite;
@@ -334,7 +336,7 @@ figcaption {
 }
 .table{
     color:antiquewhite;
-    
+   
 }
 th:after,
 th:before {
@@ -352,4 +354,32 @@ th:after {
 }
 #major-table, #minor-table{
     border-bottom: 2px solid #daa520;
+}
+@media (max-width:600px){
+    .tarot-head{
+        position:sticky; 
+        top: 25%;
+        background-color: black;
+        border-bottom: 2px solid #daa520  !important; 
+        color: antiquewhite;      
+    }
+    
+    th:after,
+    th:before {
+    content: ''; 
+    position:absolute;
+    left: 0;
+    width: 100%;
+    }
+
+
+    th:after {
+    bottom: -1px;
+    border-bottom: 2px solid #daa520  !important;
+    position:sticky;
+    
+    }
+    tbody{
+        max-width: 400px;
+    }
 }
