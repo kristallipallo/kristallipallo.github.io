@@ -122,7 +122,6 @@ form:hover .fa{
 #logo{
     height:80%;
     width: 80%;
-    border-radius:0;
 }
 
 #logo:hover {
@@ -207,6 +206,11 @@ figcaption {
     float: left;
     margin: 1rem;
     border-radius: unset;
+}
+
+#footer {
+    text-align: center;
+    font-family: contentFont;
 }
 
 @media (max-width:1200px) {
