@@ -14,6 +14,7 @@ main {
 header {
     border-bottom: 3px solid rgb(218, 165, 32);
     background-color: black;
+    width: 100%;
 }
 
 li {
@@ -332,7 +333,11 @@ figcaption {
     background-color: black;
     border-bottom: 2px solid #daa520  !important; 
     color: antiquewhite;
-   
+ 
+}
+
+th {
+    border-right:none !important;
 }
 .table{
     color:antiquewhite;
@@ -343,7 +348,7 @@ th:before {
   content: ''; 
   position:absolute;
   left: 0;
-  width: 100%;
+
 }
 
 
