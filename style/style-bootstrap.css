@@ -340,6 +340,10 @@ figcaption {
  
 }
 
+#Major {
+    margin-left: 22rem;
+}
+
 th {
     border-right:none !important;
 }
