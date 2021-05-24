@@ -360,7 +360,8 @@ th:after {
 #major-table, #minor-table{
     border-bottom: 2px solid #daa520;
 }
-@media (max-width:600px){
+
+@media (max-width:300px){
     .tarot-head{
         position:sticky; 
         top: 20%;
