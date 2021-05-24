@@ -161,13 +161,13 @@ h2, h3, h4 {
     margin-bottom: 2rem;
 }
 
-img {
+figure img{
     border-radius: 5%;
     height: 20rem;
     width: 20rem;
 }
 
-img:hover {
+figure img:hover {
     transform:scale(1.5);
 }
 

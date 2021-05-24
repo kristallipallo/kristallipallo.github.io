@@ -1,24 +1,68 @@
 <!DOCTYPE html>
 <html lang="fi">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ennustuksesi</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Astrologia</title>
+        <link rel="stylesheet" href="/vendor/bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/style/style-bootstrap.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+            integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <!-- icon library for hamburger -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
 <body>
-    <div id="menutop">
-    <header>
-        <img src="media/nmg1.jpg" id="logo">
+     <!--Navi start-->
+     <header class="fixed-top container-fluid">
+        <div class="invisible">
+            <h1>Kristallipallo</h1>
+        </div>
+        <div class="row">
+            <figure class="logo col-sm-2">
+                <a href="index.html"><img id="logo" src="media/kp_logo.svg" alt="Kristallipallo logo"></a>
+            </figure>
+
+            <button id="menuBtn" class="hidden-desk"></button>
+            <nav id="menu" class="col-sm-8 h-25">
+                <button id="closeMenuBtn" class="hidden-desk"></button>
+                <div class="">
+                    <ul class="nav justify-content-sm-center">
+                        <li class="nav-item btn btn-primary">
+                            <a class="nav-link" href="astrologia.html">Astrologia</a>
+                        </li>
+                        <li class="nav-item btn btn-primary">
+                            <a class="nav-link" href="tarot.html">Tarot-kortit</a>
+                        </li>
+                        <li class="nav-item btn btn-primary">
+                            <a class="nav-link" href="kadestaennustaminen.html">Kädestä ennustaminen</a>
+                        </li>
+                        <li class="nav-item btn btn-primary">
+                            <a class="nav-link" href="ennustuksesi.html">Ennustuksesi</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search col-sm-1">
+                    <form action="">
+                        <input type="search">
+                        <i class="fa fa-search"></i>
+                    </form>
+                </div>
+                <div id="div_kirjaudu" class="col-sm-1">
+                    <a id="kirjaudu" href="#">Kirjaudu sisään</a>
+                </div>
+            </nav>
+        </div>
     </header>
-    <nav>
-        <button>Horoskooppi</button>
-        <button>Tarot-kortit</button>
-        <button>Kädestä ennustaminen</button>
-        <button>Ennustuksesi</button>
-    </nav>
-    <div id="searchBar">search</div>
-</div>
+    <!--Navi end-->
+
+    <main>
+
+        <div class="text-center align-middle">
+            <p><br><br><br><br><br><br><br><br><br><br>COMING SOON!</p>
+        </div>
+    </main>
+    <script rel="script" src="/vendor/bootstrap-5.0.0-beta3-dist/js/bootstrap.bundle.min.js"></script>
+    <script rel="script" src="/scripts/script-bootstrap.js"></script>
 </body>
 </html>
