@@ -344,8 +344,8 @@ th {
 }
 th:after,
 th:before {
-  content: '';
-  
+  content: ''; 
+  position:absolute;
   left: 0;
   width: 100%;
 }
@@ -356,33 +356,6 @@ th:after {
   border-bottom: 2px solid #daa520  !important;
   position:sticky;
 }
-@media (min-width: 300px) {
-    /*Tarot-säätöä pienelle näytölle*/
-    .tarot-head{
-        position:sticky; 
-        top: 260px;
-        background-color: black;
-        border-bottom: 2px solid #daa520; 
-        color: antiquewhite;
-        
-        
-    }
-    .table{
-        color:antiquewhite;
-        
-    }  
-    #major-head{
-        position:sticky; 
-        top: 200px;
-        background-color: black;
-        border-bottom: 2px solid #daa520; 
-        color: antiquewhite;
-    }      
-    #minor-head{
-        position:sticky; 
-        top: 200px;
-        background-color: black;
-        border-bottom: 2px solid #daa520; 
-        color: antiquewhite;
-    }
+#major-table, #minor-table{
+    border-bottom: 2px solid #daa520;
 }
