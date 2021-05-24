@@ -368,7 +368,10 @@ th:after {
 #major-table, #minor-table{
     border-bottom: 2px solid #daa520;
 }
-
+#kolme-korttia{
+    width:100px;
+    height: 80px;
+}
 @media (max-width:300px){
     .tarot-head{
         position:sticky; 
