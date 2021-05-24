@@ -369,8 +369,15 @@ th:after {
     border-bottom: 2px solid #daa520;
 }
 #kolme-korttia{
-    width:100px;
-    height: 80px;
+    width:180px;
+    height: 100px;
+    float:right;
+}
+
+#viisi-korttia{
+    width:180px;
+    height: 180px;
+    float: right;
 }
 @media (max-width:300px){
     .tarot-head{
